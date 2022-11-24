@@ -4,127 +4,169 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <style>*{
-        font-family: 'Inter', sans-serif;
-    }
-
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-dark fixed-top">
+    <nav class="navbar" style="background-color: #e3f2fd;">
         <div class="container-fluid">
-          <a class="navbar-brand text-info" href="#">Indopedia</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title text-info" id="offcanvasDarkNavbarLabel">Menu</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <a class="navbar-brand text-info" href="#">Canon Site</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-info" id="offcanvasDarkNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Read</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Edit</a>
+                  <a class="nav-link" href="#">Store</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    History
+                    Other
                   </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">New page</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                    <li><a class="dropdown-item" href="#">Recent page</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Deleted page</a></li>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Lens</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Bag</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Lightning</a></li>
                   </ul>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled"></a>
+                </li>
               </ul>
-              <form class="d-flex mt-3" role="search">
+              <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-info" type="submit">Search</button>
+                <button class="btn btn-outline-info" type="submit">Search</button>
               </form>
             </div>
           </div>
-        </div>
       </nav>
+
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="laura-ohlman-HGb4SO8J2Wo-unsplash.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="jakob-owens-DQPP9rVLYGQ-unsplash.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="kalpit-raj-SU7GPFBRvMQ-unsplash.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 <br>
-<br>
-<br>
-      <img src="bj habibie.jpg" class="rounded mx-auto d-block" alt="...">
-      <br>
-      <h1 align="center">B.J. Habibie</h1>
-     <hr>
       <div class="container text-center">
         <div class="row">
           <div class="col">
-            <p align="justify">Prof. Dr.-Ing. Ir. H. Bacharuddin Jusuf Habibie, FREng.[1] (25 Juni 1936 – 11 September 2019)[2] adalah Presiden Republik Indonesia yang ketiga. Sebelumnya, B.J. Habibie menjabat sebagai Wakil Presiden Republik Indonesia ke-7, menggantikan Try Sutrisno. B. J. Habibie menggantikan Soeharto yang mengundurkan diri dari jabatan presiden pada tanggal 21 Mei 1998.[3][4] Sebelum memasuki dunia politik, Habibie dikenal luas sebagai seorang profesor dan ilmuwan dalam teknologi aviasi internasional dan satu-satunya presiden Indonesia hingga saat ini yang berlatarbelakang teknokrat.
-
-                B.J. Habibie kemudian digantikan oleh Abdurrahman Wahid[5] (Gus Dur) yang terpilih sebagai presiden pada 20 Oktober 1999 oleh MPR hasil Pemilu 1999. Dengan menjabat selama 2 bulan dan 7 hari (sebagai wakil presiden) dan juga selama 1 tahun dan 5 bulan (sebagai presiden), B. J. Habibie merupakan Wakil Presiden dan juga Presiden Indonesia dengan masa jabatan terpendek.[6]
-                
-                B. J. Habibie merupakan presiden Indonesia pertama yang terlahir di luar Jawa dan berasal dari etnis Gorontalo, Sulawesi[7][8] dari garis keturunan ayahnya yang berasal dari Kabila, Gorontalo dan etnis Jawa dari ibunya yang berasal dari Yogyakarta.[9]
-                
-                Saat ini, Pemerintah Provinsi Gorontalo telah membangun Monumen B.J. Habibie di depan pintu gerbang utama Bandar Udara Djalaluddin, di Kabupaten Gorontalo.[10][11] Selain itu, masyarakat Provinsi Gorontalo pun sempat mengusulkan nama B.J. Habibie digunakan sebagai nama universitas negeri setempat, menggantikan nama Universitas Negeri Gorontalo yang masih digunakan.</p>
-                <br>
-                <h1>Keluarga dan pendidikan</h1>
-                <hr>
-                <h3 align="justify">Keluarga</h3>
-                <p align="justify">B.J. Habibie merupakan anak keempat dari delapan bersaudara, pasangan Alwi Abdul Jalil Habibie dan R.A. Tuti Marini Puspowardojo. Ayahnya yang berprofesi sebagai ahli pertanian yang berasal dari etnis Gorontalo,[12][13] sedangkan ibunya berasal dari etnis Jawa.[14]
-
-                    Alwi Abdul Jalil Habibie (ayah dari B.J. Habibie) memiliki marga "Habibie", salah satu marga asli dalam struktur sosial Pohala'a (Kerajaan dan Kekeluargaan)[15] di Gorontalo. Sementara itu, R.A. Tuti Marini Puspowardojo (ibu dari B.J. Habibie) merupakan anak seorang dokter spesialis mata di Yogyakarta dan ayahnya yang bernama Puspowardjojo bertugas sebagai pemilik sekolah.[16]
-                    
-                    Marga Habibie dicatat secara historis berasal dari wilayah Kabila, sebuah daerah di Kabupaten Bone Bolango, Provinsi Gorontalo.[17][18] Dari silsilah keluarga, kakek dari B.J. Habibie merupakan seorang pemuka agama, anggota majelis peradilan agama, serta salah satu pemangku adat Gorontalo yang tersohor pada saat itu.[19] Keluarga besar Habibie di Gorontalo terkenal gemar beternak sapi, memiliki kuda dalam jumlah yang banyak, serta memiliki perkebunan kopi.</p>
-                    <h3 align="justify">Pendidikan</h3>
-                    <p align="justify">Habibie belajar tentang keilmuan teknik mesin di Fakultas Teknik Universitas Indonesia Bandung (sekarang Institut Teknologi Bandung) pada tahun 1954. Pada 1955–1965, Habibie melanjutkan studi teknik penerbangan, spesialisasi konstruksi pesawat terbang, di RWTH Aachen, Jerman Barat. Menerima gelar diploma insinyur pada 1960 dan gelar doktor insinyur pada 1965 dengan predikat summa cum laude.</p>
-                    <br>
-                    <h1>Pekerjaan dan karier</h1>
-                    <hr>
-                    
-                    <p align="justify">Habibie pernah bekerja di Messerschmitt-Bölkow-Blohm, sebuah perusahaan penerbangan yang berpusat di Hamburg, Jerman Barat.[28] Pada tahun 1973, ia kembali ke Indonesia atas permintaan Presiden Soeharto.
-
-                        Habibie kemudian menjabat sebagai Menteri Negara Riset dan Teknologi (Menristek) sejak tahun 1978 sampai Maret 1998. Gebrakan B. J. Habibie saat menjabat Menristek diawalinya dengan keinginannya untuk mengimplementasikan "Visi Indonesia". Menurut Habibie, lompatan-lompatan Indonesia dalam "Visi Indonesia" bertumpu pada riset dan teknologi, khususnya pula dalam industri strategis yang dikelola oleh PT IPTN, PT Pindad, dan PT PAL.[29] Targetnya, Indonesia sebagai negara agraris dapat melompat langsung menjadi negara industri dengan penguasaan ilmu pengetahuan dan teknologi.
-                        
-                        Sementara itu, ketika menjabat sebagai Menristek, Habibie juga terpilih sebagai Ketua Ikatan Cendekiawan Muslim se-Indonesia (ICMI) yang pertama. Habibie terpilih secara aklamasi menjadi Ketua ICMI pada tanggal 7 Desember 1990.[30]
-                        
-                        Puncak karier Habibie terjadi pada tahun 1998, di mana saat itu ia diangkat sebagai Presiden Republik Indonesia (21 Mei 1998 - 20 Oktober 1999), setelah sebelumnya menjabat sebagai Wakil Presiden ke-7 (menjabat sejak 14 Maret 1998 hingga 21 Mei 1998) dalam Kabinet Pembangunan VII di bawah Presiden Soeharto.[31]</p>
-                        <br>
-                        <h1>Masa kepresidenan</h1>
-                        <hr>
-                        <p align="justify">Habibie mewarisi kondisi keadaan negara kacau balau pasca pengunduran diri Soeharto pada masa Orde Baru sehingga menimbulkan maraknya kerusuhan dan disintegerasi hampir seluruh wilayah Indonesia. Segera setelah memperoleh kekuasaan, Presiden Habibie segera membentuk sebuah kabinet. Salah satu tugas pentingnya adalah kembali mendapatkan dukungan dari Dana Moneter Internasional dan komunitas negara-negara donor untuk program pemulihan ekonomi. Dia juga membebaskan para tahanan politik dan mengurangi kontrol pada kebebasan berpendapat dan kegiatan organisasi.[33][34]
-
-                            Pada era pemerintahannya yang singkat, ia berhasil memberikan landasan kokoh bagi Indonesia. Pada eranya, dilahirkan UU Anti-Monopoli atau UU Persaingan Sehat, perubahan UU Partai Politik, dan yang paling penting adalah UU Otonomi Daerah. Melalui penerapan UU Otonomi Daerah inilah gejolak disintegrasi yang diwarisi sejak era Orde Baru berhasil diredam dan akhirnya dituntaskan pada era Presiden Susilo Bambang Yudhoyono. Tanpa adanya UU Otonomi Daerah, bisa dipastikan Indonesia akan mengalami nasib sama seperti Uni Soviet dan Yugoslavia.
-                            
-                            Pengangkatan B.J. Habibie sebagai Presiden menimbulkan berbagai macam kontroversi bagi masyarakat Indonesia. Pihak yang pro menganggap pengangkatan Habibie sudah konstitusional.[35] Hal itu sesuai dengan ketentuan pasal 8 UUD 1945 yang menyebutkan bahwa "bila Presiden mangkat, berhenti, atau tidak dapat melakukan kewajibannya dalam masa jabatannya, ia diganti oleh Wakil Presiden sampai habis waktunya". Sedangkan pihak yang kontra menganggap bahwa pengangkatan B.J. Habibie dianggap tidak konstitusional. Hal ini bertentangan dengan ketentuan Pasal 9 UUD 1945 yang menyebutkan bahwa "Sebelum presiden memangku jabatan, maka presiden harus mengucapkan sumpah atau janji di depan MPR atau DPR".</p>
-                            <br>
-                            <h1>Pasca-kepresidenan</h1>
-                            <hr>
-                            <p align="justify">Setelah ia tidak menjabat lagi sebagai presiden, Habibie sempat tinggal dan menetap di Jerman. Tetapi, ketika era kepresidenan Susilo Bambang Yudhoyono, ia kembali aktif sebagai penasihat presiden untuk mengawal proses demokratisasi di Indonesia lewat organisasi yang didirikannya Habibie Center dan akhirnya menetap dan berdomisili di Indonesia.
-
-                                Kontribusi besar Habibie bagi bangsa ini pun tetap tercurahkan ketika masa kepemimpinan Presiden Joko Widodo. Habibie aktif memberikan masukan dan gagasan pembangunan bagi pengembangan sumber daya manusia di Indonesia.[40] Kesibukan lain dari B. J. Habibie adalah mengurusi industri pesawat terbang yang sedang dikembangkannya di Batam. Habibie menjabat sebagai Komisaris Utama dari PT Regio Aviasi Industri, sebuah perusahaan perancang pesawat terbang R-80 dan kemudian menyerahkan pucuk pimpinan perusahaan tersebut kepada anaknya, Ilham Habibie.</p>
-                                <br>
-                              <h1>Wafat</h1>  
-                              <hr>
-                              <p align="justify">Habibie meninggal dunia di RSPAD Gatot Subroto pada tanggal 11 September 2019 pukul 18.05 WIB karena gagal jantung. Sebelumnya, Habibie telah menjalani perawatan intensif sejak 1 September 2019.[2] Sehari sebelum dimakamkan, Jenazah B.J. Habibie dibawa dari RSPAD menuju ke kediaman Habibie-Ainun di Jalan Patra Kuningan XIII Blok L15/7 No.5, kawasan Patra Kuningan untuk disemayamkan. Ia kemudian dimakamkan di samping istrinya yaitu Hasri Ainun Besari di Taman Makam Pahlawan Kalibata slot 120 pada tanggal 12 September 2019 pukul 14.00 WIB. Upacara pemakaman dihadiri oleh Presiden Republik Indonesia Joko Widodo sebagai inspektur upacara.
-
-                                B. J. Habibie merupakan presiden Indonesia pertama yang dikebumikan di taman makam pahlawan di ibukota Jakarta, sementara presiden Sukarno dan Abdurrahman Wahid dimakamkan di Jawa Timur sedangkan presiden Suharto dimakamkan di Karanganyar, Jawa Tengah.</p>
-
+            <div class="card" style="width: 18rem;">
+                <img src="600d.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Canon EOS 600D</h5>
+                  <p class="card-text">$75</p>
+                  <a href="#" class="btn btn-primary">Buy now</a>
+                </div>
+              </div>
           </div>
-
-          <hr>
-          <p>Halaman ini terakhir diubah pada 24 November 2022, pukul 14.55.
-            Teks tersedia di bawah <a href="#"> Lisensi Creative Commons Atribusi-BerbagiSerupa;</a> ketentuan tambahan mungkin berlaku. Lihat <a href="#">Ketentuan Penggunaan</a> untuk lebih jelasnya.</p>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="500d.jpg_.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Canon EOS 500D</h5>
+                  <p class="card-text">$70</p>
+                  <a href="#" class="btn btn-primary">Buy now</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="r5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Canon EOS R5</h5>
+                  <p class="card-text">$170</p>
+                  <a href="#" class="btn btn-primary">Buy now</a>
+                </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                  <img src="r6.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Canon EOS R6</h5>
+                    <p class="card-text">$150</p>
+                    <a href="#" class="btn btn-primary">Buy now</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                  <img src="r7.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Canon EOS R7</h5>
+                    <p class="card-text">$100</p>
+                    <a href="#" class="btn btn-primary">Buy now</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                  <img src="1200d.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Canon EOS 1200D</h5>
+                    <p class="card-text">$90</p>
+                    <a href="#" class="btn btn-primary">Buy now</a>
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+                      <img src="1300d.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Canon EOS 1300D</h5>
+                        <p class="card-text">$85</p>
+                        <a href="#" class="btn btn-primary">Buy now</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+                      <img src="1500d.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Canon EOS 1500D</h5>
+                        <p class="card-text">$80</p>
+                        <a href="#" class="btn btn-primary">Buy now</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+                      <img src="700d.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Canon EOS 700D</h5>
+                        <p class="card-text">$80</p>
+                        <a href="#" class="btn btn-primary">Buy now</a>
+                      </div>
+                    </div>
+                </div>
+        </div>
+      </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
 </html>
